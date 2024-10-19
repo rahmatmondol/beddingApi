@@ -22,10 +22,15 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
-        Schema::defaultStringLength(191); 
+        Schema::defaultStringLength(191);
 
+        // Routes without any prefix
         Route::middleware('web')
-            ->prefix('admin') 
+            ->group(base_path('routes/user.php'));
+
+        // Routes with 'admin' prefix
+        Route::middleware('web')
+            ->prefix('admin')
             ->group(base_path('routes/admin.php'));
     }
 }
