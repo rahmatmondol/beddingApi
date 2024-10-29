@@ -17,7 +17,7 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="{{ asset('user/assets/icon/Favicon.png') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('user/assets/icon/Favicon.png') }}">
-
+    @livewireStyles
 </head>
 
 <body class="body counter-scroll sticky-scroll1">
@@ -39,9 +39,9 @@
 
     <div id="wrapper">
         <div id="page" class="home-7">
-            @include('layouts.header');
+            @include('layouts.header')
             {{ $slot }}
-            @include('layouts.footer');
+            @include('layouts.footer')
         </div>
     </div>
     <!-- /#page -->
@@ -57,7 +57,7 @@
             </path>
         </svg>
     </div>
-
+    @livewireScripts
     <!-- Javascript -->
     <script src="{{ asset('user/assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('user/assets/js/popper.min.js') }}"></script>

@@ -18,8 +18,6 @@ class Campaign extends Model
         return $this->belongsTo(Zone::class);
     }
 
-
-
     public function service()
     {
         return $this->belongsTo(Service::class);

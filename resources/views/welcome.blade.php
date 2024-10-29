@@ -10,9 +10,9 @@
                             <p>Discover, collect and sell extraordinary NFTs
                                 on the world’s first & largest NFT marketplace</p>
                             <div class="flat-button flex">
-                                <a href="/service/details/1" class="tf-button style-1 h50 w190 mr-10">Explore more <i
+                                <a  href="/service/details/1" wire:navigate  class="tf-button style-1 h50 w190 mr-10">Explore more <i
                                         class="icon-arrow-up-right2"></i></a>
-                                <a href="/service/details/1" class="tf-button style-1 h50 w190 active">Wallet connect <i
+                                <a href="/service/details/1" wire:navigate  class="tf-button style-1 h50 w190 active">Wallet connect <i
                                         class="icon-wa"></i></a>
                             </div>
                         </div>
@@ -175,172 +175,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="flat-pages-title">
-            <div class="widget-bg-line">
-                <div class="wraper">
-                    <div class="bg-grid-line y bottom">
-                        <div class="bg-line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="themesflat-container w1490">
-                <div class="row">
-                    <div class="col-12 pages-title">
-                        <div class="relative">
-                            <div class="swiper swiper-3d-7" >
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="tf-card-box">
-                                            <div class="card-media">
-                                                <a href="/service/details/1">
-                                                    <img src="{{ asset('user') }}/assets/images/box-item/banner-01.jpg" alt="">
-                                                </a>
-                                                <span class="wishlist-button icon-heart"></span>
-                                                <div class="featured-countdown">
-                                                    <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                </div>
-                                                <div class="button-place-bid">
-                                                    <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="meta-info text-center">
-                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tf-card-box">
-                                            <div class="card-media">
-                                                <a href="/service/details/1">
-                                                    <img src="{{ asset('user') }}/assets/images/box-item/banner-02.jpg" alt="">
-                                                </a>
-                                                <span class="wishlist-button icon-heart"></span>
-                                                <div class="featured-countdown">
-                                                    <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                </div>
-                                                <div class="button-place-bid">
-                                                    <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="meta-info text-center">
-                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tf-card-box">
-                                            <div class="card-media">
-                                                <a href="/service/details/1">
-                                                    <img src="{{ asset('user') }}/assets/images/box-item/banner-03.jpg" alt="">
-                                                </a>
-                                                <span class="wishlist-button icon-heart"></span>
-                                                <div class="featured-countdown">
-                                                    <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                </div>
-                                                <div class="button-place-bid">
-                                                    <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="meta-info text-center">
-                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tf-card-box">
-                                            <div class="card-media">
-                                                <a href="/service/details/1">
-                                                    <img src="{{ asset('user') }}/assets/images/box-item/banner-04.jpg" alt="">
-                                                </a>
-                                                <span class="wishlist-button icon-heart"></span>
-                                                <div class="featured-countdown">
-                                                    <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                </div>
-                                                <div class="button-place-bid">
-                                                    <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="meta-info text-center">
-                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tf-card-box">
-                                            <div class="card-media">
-                                                <a href="/service/details/1">
-                                                    <img src="{{ asset('user') }}/assets/images/box-item/banner-05.jpg" alt="">
-                                                </a>
-                                                <span class="wishlist-button icon-heart"></span>
-                                                <div class="featured-countdown">
-                                                    <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                </div>
-                                                <div class="button-place-bid">
-                                                    <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="meta-info text-center">
-                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tf-card-box">
-                                            <div class="card-media">
-                                                <a href="/service/details/1">
-                                                    <img src="{{ asset('user') }}/assets/images/box-item/banner-06.jpg" alt="">
-                                                </a>
-                                                <span class="wishlist-button icon-heart"></span>
-                                                <div class="featured-countdown">
-                                                    <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                </div>
-                                                <div class="button-place-bid">
-                                                    <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="meta-info text-center">
-                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="tf-card-box">
-                                            <div class="card-media">
-                                                <a href="/service/details/1">
-                                                    <img src="{{ asset('user') }}/assets/images/box-item/banner-07.jpg" alt="">
-                                                </a>
-                                                <span class="wishlist-button icon-heart"></span>
-                                                <div class="featured-countdown">
-                                                    <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
-                                                </div>
-                                                <div class="button-place-bid">
-                                                    <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid" class="tf-button"><span>Place Bid</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="meta-info text-center">
-                                                <h5 class="name"><a href="nft-detail-2.html">Dayco serpentine belt</a></h5>
-                                                <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination pagination-number"></div>
-                            </div>
-                            <div class="swiper-button-next next-3d over"></div>
-                            <div class="swiper-button-prev prev-3d over"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <livewire:service-slider />
+       
         <div class="tf-section-1 featured-item">
             <div class="themesflat-container">
                 <div class="row">
@@ -396,7 +232,7 @@
                                             </div>
                                         </div>
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-59.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
@@ -409,7 +245,7 @@
                                                 <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                             </div>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -427,7 +263,7 @@
                                             </div>
                                         </div>
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-50.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
@@ -440,7 +276,7 @@
                                                 <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                             </div>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -458,7 +294,7 @@
                                             </div>
                                         </div>
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-51.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
@@ -471,7 +307,7 @@
                                                 <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                             </div>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -489,7 +325,7 @@
                                             </div>
                                         </div>
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-52.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
@@ -502,7 +338,7 @@
                                                 <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                             </div>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -520,7 +356,7 @@
                                             </div>
                                         </div>
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-53.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
@@ -533,7 +369,7 @@
                                                 <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                             </div>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -551,7 +387,7 @@
                                             </div>
                                         </div>
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-54.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
@@ -564,7 +400,7 @@
                                                 <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                             </div>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -582,7 +418,7 @@
                                             </div>
                                         </div>
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-55.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
@@ -595,7 +431,7 @@
                                                 <h6 class="price gem"><i class="icon-gem"></i>0,34</h6>
                                             </div>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -981,7 +817,7 @@
                                     <div class="tf-category text-center">
                                         <div class="card-media">
                                             <img src="{{ asset('user') }}/assets/images/box-item/iconcategory-01.png" alt="">
-                                            <a href="/service/details/1"><i class="icon-arrow-up-right2"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-arrow-up-right2"></i></a>
                                         </div>
                                         <h6>Metaverse</h6>
                                     </div>
@@ -990,7 +826,7 @@
                                     <div class="tf-category text-center">
                                         <div class="card-media">
                                             <img src="{{ asset('user') }}/assets/images/box-item/iconcategory-02.png" alt="">
-                                            <a href="/service/details/1"><i class="icon-arrow-up-right2"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-arrow-up-right2"></i></a>
                                         </div>
                                         <h6>Metaverse</h6>
                                     </div>
@@ -999,7 +835,7 @@
                                     <div class="tf-category text-center">
                                         <div class="card-media">
                                             <img src="{{ asset('user') }}/assets/images/box-item/iconcategory-03.png" alt="">
-                                            <a href="/service/details/1"><i class="icon-arrow-up-right2"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-arrow-up-right2"></i></a>
                                         </div>
                                         <h6>Sport</h6>
                                     </div>
@@ -1008,7 +844,7 @@
                                     <div class="tf-category text-center">
                                         <div class="card-media">
                                             <img src="{{ asset('user') }}/assets/images/box-item/iconcategory-04.png" alt="">
-                                            <a href="/service/details/1"><i class="icon-arrow-up-right2"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-arrow-up-right2"></i></a>
                                         </div>
                                         <h6>Crypto</h6>
                                     </div>
@@ -1017,7 +853,7 @@
                                     <div class="tf-category text-center">
                                         <div class="card-media">
                                             <img src="{{ asset('user') }}/assets/images/box-item/iconcategory-05.png" alt="">
-                                            <a href="/service/details/1"><i class="icon-arrow-up-right2"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-arrow-up-right2"></i></a>
                                         </div>
                                         <h6>Music</h6>
                                     </div>
@@ -1026,7 +862,7 @@
                                     <div class="tf-category text-center">
                                         <div class="card-media">
                                             <img src="{{ asset('user') }}/assets/images/box-item/iconcategory-06.png" alt="">
-                                            <a href="/service/details/1"><i class="icon-arrow-up-right2"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-arrow-up-right2"></i></a>
                                         </div>
                                         <h6>Digital Art</h6>
                                     </div>
@@ -1035,7 +871,7 @@
                                     <div class="tf-category text-center">
                                         <div class="card-media">
                                             <img src="{{ asset('user') }}/assets/images/box-item/iconcategory-01.png" alt="">
-                                            <a href="/service/details/1"><i class="icon-arrow-up-right2"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-arrow-up-right2"></i></a>
                                         </div>
                                         <h6>Typo</h6>
                                     </div>
@@ -1044,7 +880,7 @@
                                     <div class="tf-category text-center">
                                         <div class="card-media">
                                             <img src="{{ asset('user') }}/assets/images/box-item/iconcategory-02.png" alt="">
-                                            <a href="/service/details/1"><i class="icon-arrow-up-right2"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-arrow-up-right2"></i></a>
                                         </div>
                                         <h6>Typo</h6>
                                     </div>
@@ -1113,12 +949,12 @@
                                 <div class="swiper-slide">
                                     <div class="tf-card-box style-1">
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-54.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -1143,12 +979,12 @@
                                 <div class="swiper-slide">
                                     <div class="tf-card-box style-1">
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-52.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -1173,12 +1009,12 @@
                                 <div class="swiper-slide">
                                     <div class="tf-card-box style-1">
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-56.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -1203,12 +1039,12 @@
                                 <div class="swiper-slide">
                                     <div class="tf-card-box style-1">
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-53.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -1233,12 +1069,12 @@
                                 <div class="swiper-slide">
                                     <div class="tf-card-box style-1">
                                         <div class="card-media">
-                                            <a href="/service/details/1">
+                                            <a href="/service/details/1" >
                                                 <img src="{{ asset('user') }}/assets/images/box-item/card-item-56.jpg" alt="">
                                             </a>
                                             <span class="wishlist-button icon-heart"></span>
                                             <div class="button-place-bid">
-                                                <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                                <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                     class="tf-button"><span>Place Bid</span></a>
                                             </div>
                                         </div>
@@ -1721,12 +1557,12 @@
                             <div data-wow-delay="0s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-54.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1751,12 +1587,12 @@
                             <div data-wow-delay="0.1s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-52.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1781,12 +1617,12 @@
                             <div data-wow-delay="0.2s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-56.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1811,12 +1647,12 @@
                             <div data-wow-delay="0s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-53.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1841,12 +1677,12 @@
                             <div data-wow-delay="0.1s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-54.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1871,12 +1707,12 @@
                             <div data-wow-delay="0.2s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-52.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1901,12 +1737,12 @@
                             <div data-wow-delay="0s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-56.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1931,12 +1767,12 @@
                             <div data-wow-delay="0.1s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-53.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1961,12 +1797,12 @@
                             <div data-wow-delay="0.2s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-54.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -1991,12 +1827,12 @@
                             <div data-wow-delay="0s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-52.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -2021,12 +1857,12 @@
                             <div data-wow-delay="0.1s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-56.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -2051,12 +1887,12 @@
                             <div data-wow-delay="0.2s" class="wow fadeInUp col-lg-4 col-md-6">
                                 <div class="tf-card-box style-1">
                                     <div class="card-media">
-                                        <a href="/service/details/1">
+                                        <a href="/service/details/1" >
                                             <img src="{{ asset('user') }}/assets/images/box-item/card-item-53.jpg" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="button-place-bid">
-                                            <a href="/service/details/1" data-toggle="modal" data-target="#popup_bid"
+                                            <a href="/service/details/1"  data-toggle="modal" data-target="#popup_bid"
                                                 class="tf-button"><span>Place Bid</span></a>
                                         </div>
                                     </div>
@@ -2082,25 +1918,25 @@
                                 <div class="widget-pagination">
                                     <ul class="justify-center">
                                         <li>
-                                            <a href="/service/details/1"><i class="icon-keyboard_arrow_left"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-keyboard_arrow_left"></i></a>
                                         </li>
                                         <li>
-                                            <a href="/service/details/1">1</a>
+                                            <a href="/service/details/1" >1</a>
                                         </li>
                                         <li>
-                                            <a href="/service/details/1">2</a>
+                                            <a href="/service/details/1" >2</a>
                                         </li>
                                         <li class="active">
-                                            <a href="/service/details/1">3</a>
+                                            <a href="/service/details/1" >3</a>
                                         </li>
                                         <li>
-                                            <a href="/service/details/1">4</a>
+                                            <a href="/service/details/1" >4</a>
                                         </li>
                                         <li>
-                                            <a href="/service/details/1">...</a>
+                                            <a href="/service/details/1" >...</a>
                                         </li>
                                         <li>
-                                            <a href="/service/details/1"><i class="icon-keyboard_arrow_right"></i></a>
+                                            <a href="/service/details/1" ><i class="icon-keyboard_arrow_right"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -2121,9 +1957,9 @@
                             </div>
                             <h2>Discover, create and sell your own NFT</h2>
                             <div class="flat-button flex">
-                                <a href="/service/details/1" class="tf-button style-2 h50 w190 mr-10">Explore now<i
+                                <a href="/service/details/1"  class="tf-button style-2 h50 w190 mr-10">Explore now<i
                                         class="icon-arrow-up-right2"></i></a>
-                                <a href="/service/details/1" class="tf-button style-2 h50 w230">Create your first NFT<i
+                                <a href="/service/details/1"  class="tf-button style-2 h50 w230">Create your first NFT<i
                                         class="icon-arrow-up-right2"></i></a>
                             </div>
                             <div class="bg-home7">

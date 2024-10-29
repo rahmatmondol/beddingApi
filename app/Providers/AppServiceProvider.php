@@ -24,13 +24,13 @@ class AppServiceProvider extends ServiceProvider
         //
         Schema::defaultStringLength(191);
 
-        // Routes without any prefix
-        Route::middleware('web')
-            ->group(base_path('routes/user.php'));
+        // // Routes without any prefix
+        // Route::middleware('web')
+        //     ->group(base_path('routes/user.php'));
 
-        // Routes with 'admin' prefix
-        Route::middleware('web')
-            ->prefix('admin')
-            ->group(base_path('routes/admin.php'));
+        // // Routes with 'admin' prefix
+        // Route::middleware('web')
+        //     ->prefix('admin')
+        //     ->group(base_path('routes/admin.php'));
     }
 }

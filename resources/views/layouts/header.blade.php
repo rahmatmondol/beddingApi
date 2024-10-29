@@ -7,7 +7,7 @@
 
                         <div id="site-logo">
                             <div id="site-logo-inner">
-                                <a href="index.html" rel="home" class="main-logo">
+                                <a href="/" wire:navigate rel="home" class="main-logo">
                                     <img id="logo_header" src="{{asset('user/assets/images/logo/logo.png')}}"
                                         data-retina="{{asset('user/assets/images/logo/logo.png')}}">
                                 </a>
@@ -18,7 +18,7 @@
                             <span></span>
                         </div><!-- /.mobile-button -->
 
-                        @include('layouts.mainNav');
+                        @include('layouts.mainNav')
 
                         <div class="flat-wallet flex">
                             <div class="header-search hidden relative">
@@ -62,6 +62,6 @@
         </div>
     </div>
 
-    @include('layouts.canvas');
-    @include('layouts.mobileNav');
+    @include('layouts.canvas')
+    @include('layouts.mobileNav')
 </header>
