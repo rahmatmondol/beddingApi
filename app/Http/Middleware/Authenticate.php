@@ -4,14 +4,32 @@ namespace App\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Illuminate\Http\Request;
-
+use Closure;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Role;
 class Authenticate extends Middleware
 {
     /**
-     * Get the path the user should be redirected to when they are not authenticated.
+     * Handle an incoming request.
      */
-    protected function redirectTo(Request $request): ?string
+    public function handle($request, Closure $next, ...$guards)
     {
-        return $request->expectsJson() ? null : route('login');
+        // Check if the user is authenticated
+        if (!Auth::check()) {
+            return $request->expectsJson() ? abort(401) : redirect()->route('login');
+        }
+
+        if (strpos($request->url(), 'logout') !== false) {
+            return $next($request);
+        }
+        
+        $role = Auth::user()->roles->pluck('name')[0];
+
+        // // Check if the user is a customer
+        if ($role !== 'admin') {
+            return abort(403, 'Unauthorized access.');
+        }
+
+        return $next($request);
     }
 }

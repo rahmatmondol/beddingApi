@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="heading-section pb-20">
-                    <h2 class="tf-title ">Related artworks</h2>
+                    <h2 class="tf-title ">Related services</h2>
                     <a href="explore-3.html" class="">Discover more <i class="icon-arrow-right2"></i></a>
                 </div>
             </div>
@@ -44,9 +44,8 @@
                             <div class="tf-card-box style-1">
                                 <div class="card-media">
                                     <a href="/service/{{ $service->id }}">
-                                        <img src="{{ asset('user') }}/assets/images/box-item/card-item-01.jpg" alt="">
+                                        <img src="{{ $service->imag }}" alt="">
                                     </a>
-                                    <span class="wishlist-button icon-heart"></span>
                                     <div class="featured-countdown">
                                         <span class="js-countdown" data-timer="7500" data-labels="d,h,m,s"></span>
                                     </div>
@@ -57,13 +56,9 @@
                                 </div>
                                 <h5 class="name"><a href="/service/{{ $service->id }}">{{ $service->name }}</a></h5>
                                 <div class="author flex items-center">
-                                    <div class="avatar">
-                                        <img src="{{ asset('user') }}/assets/images/avatar/avatar-box-01.jpg"
-                                            alt="Image">
-                                    </div>
                                     <div class="info">
                                         <span>Posted by:</span>
-                                        <h6><a href="author-2.html">Cody Fisher</a> </h6>
+                                        <h6><a href="author-2.html">{{ $service->user->name }}</a> </h6>
                                     </div>
                                 </div>
                                 <div class="divider"></div>

@@ -10,6 +10,10 @@ class Login extends Component
     public $password;
     public function render()
     {
+        if (auth()->check()) {
+            // return redirect()->with(['success' => 'You are already logged in!'])->route('auth-dashboard');
+            $this->redirectRoute('auth-dashboard');
+        }
         return view('livewire.auth.login');
     }
 

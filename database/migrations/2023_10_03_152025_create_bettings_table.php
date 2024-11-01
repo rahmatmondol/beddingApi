@@ -13,11 +13,13 @@ return new class extends Migration
     {
         Schema::create('bettings', function (Blueprint $table) {
             $table->id();
-            $table->integer('provider_id');
-            $table->integer('service_id');
-            $table->text('additional_details')->nullable;
+            $table->text('additional_details')->nullable();
+            $table->string('betting_amount');
             $table->text('metadata')->nullable();
             $table->string('status')->default(false);
+
+            $table->foreignId('service_id')->constrained('services')->onDelete('cascade')->nullable();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }

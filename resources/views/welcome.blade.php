@@ -175,6 +175,7 @@
                 </div>
             </div>
         </div>
+        
         <livewire:service-slider />
        
         <div class="tf-section-1 featured-item">

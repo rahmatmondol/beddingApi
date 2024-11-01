@@ -16,8 +16,8 @@ class ServiceDetails extends Component
 
     public function render()
     {
-        $service = Service::findOrFail($this->serviceId);
-
+        $service = Service::findOrFail($this->serviceId)->load('category', 'bettings');
+        // dd($service);
         return view('livewire.service.service-details', compact('service'));
     }
 }

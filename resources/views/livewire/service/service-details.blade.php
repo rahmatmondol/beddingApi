@@ -1,16 +1,22 @@
 <div>
     <div class="tf-section-2 product-detail">
         <div class="themesflat-container">
-            <pre>
-        {{ $service }}
-       </pre>
+            @if (session()->has('success'))
+                <h2 class="alert alert-success">
+                    {{ session('success') }}
+                </h2>
+            @endif
+            @if (session()->has('error'))
+                <h2 class="alert alert-error">
+                    {{ session('error') }}
+                </h2>
+            @endif
             <div class="row">
-
                 <div class="col-md-6">
                     <div data-wow-delay="0s" class="wow fadeInLeft tf-card-box style-5">
                         <div class="card-media mb-0">
                             <a href="#">
-                                <img src="{{ asset('user') }}/assets/images/box-item/product-01.jpg" alt="">
+                                <img src="{{ $service->image }}" alt="">
                             </a>
                         </div>
                         <h6 class="price gem"><i class="icon-gem"></i></h6>
@@ -23,58 +29,15 @@
                 </div>
                 <div class="col-md-6">
                     <div data-wow-delay="0s" class="wow fadeInRight infor-product">
-                        <div class="text">8SIAN Main Collection <span class="icon-tick"><span class="path1"></span><span
-                                    class="path2"></span></span></div>
-                        <div class="menu_card">
-                            <div class="dropdown">
-                                <div class="icon">
-                                    <a href="javascript:void(0);" class="btn-link" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="icon-link-1"></i>
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#"><i class="icon-link"></i>Copy link</a>
-                                        <a class="dropdown-item" href="#"><i class="icon-facebook"></i>Share on
-                                            facebook</a>
-                                        <a class="dropdown-item mb-0" href="#"><i class="icon-twitter"></i>Share
-                                            on twitter</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <div class="icon">
-                                    <a href="javascript:void(0);" class="btn-link" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="icon-content"></i>
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#"><i class="icon-refresh"></i>Refresh
-                                            metadata</a>
-                                        <a class="dropdown-item mb-0" href="#"><i class="icon-report"></i>Report</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="text">{{ $service->category->name }} <span class="icon-tick"><span
+                                    class="path1"></span><span class="path2"></span></span></div>
+
                         <h2>{{ $service->name }}</h2>
 
                         <div class="author flex items-center mb-30">
-                            <div class="avatar">
-                                <img src="{{ asset('user') }}/assets/images/avatar/avatar-box-05.jpg" alt="Image">
-                            </div>
                             <div class="info">
                                 <span>Owned by:</span>
-                                <h6><a href="author-1.html">Marvin McKinney</a> </h6>
-                            </div>
-                        </div>
-                        <div class="meta mb-20">
-                            <div class="meta-item view">
-                                <i class="icon-show"></i>208 view
-                            </div>
-                            <div class="meta-item rating">
-                                <i class="icon-link-2"></i>Top #2 trending
-                            </div>
-                            <div class="meta-item favorites">
-                                <i class="icon-heart"></i>10 favorites
+                                <h6><a href="author-1.html">{{ $service->user->name }}</a> </h6>
                             </div>
                         </div>
                     </div>
@@ -83,115 +46,123 @@
                         <div class="content">
                             <div class="text">Current price</div>
                             <div class="flex justify-between">
-                                <p>{{ $service->price }}{{ $service->currency == "usd" ? "$" : $service->currency }}</p>
-                                <a href="#" data-toggle="modal" data-target="#popup_bid"
-                                    class="tf-button style-1 h50 w216">Place a bid<i
-                                        class="icon-arrow-up-right2"></i></a>
+                                <p>{{ $service->currency == 'usd' ? "$" : $service->currency }}{{ $service->price }}</p>
+                                @if (auth()->check() && auth()->user()->hasRole('provider'))
+                                    <a href="#" data-toggle="modal" data-target="#popup_bid"
+                                        class="tf-button style-1 h50 w216">Place a bid<i
+                                            class="icon-arrow-up-right2"></i></a>
+                                @else
+                                    <a href="{{ route('auth-login') }}" wire:navigate class="tf-button style-1 h50 w216">Place a bid<i
+                                            class="icon-arrow-up-right2"></i></a>
+                                @endif
                             </div>
                         </div>
                     </div>
                     <div data-wow-delay="0s" class="wow fadeInRight product-item description">
                         <h6><i class="icon-description"></i>Description</h6>
                         <i class="icon-keyboard_arrow_down"></i>
-                        <div class="content">
+                        <div class="content" style="font-size: 16px;">
                             {!! $service->description !!}
-
                         </div>
                     </div>
-
-                    <div data-wow-delay="0s" class="wow fadeInRight product-item details">
-                        <h6><i class="icon-description"></i>Details</h6>
+                    <div data-wow-delay="0s" class="wow fadeInRight product-item description">
+                        <h6><i class="icon-description"></i>Address</h6>
                         <i class="icon-keyboard_arrow_down"></i>
-                        <div class="content">
-                            <div class="details-item">
-                                <span>Contract Address</span>
-                                <span class="tf-color">{{ $service->location }}</span>
-                            </div>
-                            <div class="details-item">
-                                <span>Token ID</span>
-                                <span class="tf-color">0270</span>
-                            </div>
-                            <div class="details-item">
-                                <span>Token Standard</span>
-                                <span class="">ERC-721</span>
-                            </div>
-                            <div class="details-item">
-                                <span>Chain</span>
-                                <span class="">Ethereum</span>
-                            </div>
-                            <div class="details-item">
-                                <span>Last Updated</span>
-                                <span class="">8 months ago</span>
-                            </div>
-                            <div class="details-item mb-0">
-                                <span>Creator Earnings</span>
-                                <span class="">8%</span>
-                            </div>
+                        <div class="content" style="font-size: 16px;">
+                            <p> {{ $service->location }}</p>
                         </div>
                     </div>
-
                 </div>
+
                 <div data-wow-delay="0s" class="wow fadeInUp col-12">
-                    <div class="product-item offers">
-                        <h6><i class="icon-description"></i>Offers</h6>
-                        <i class="icon-keyboard_arrow_down"></i>
-                        <div class="content">
-                            <div class="table-heading">
-                                <div class="column">Price</div>
-                                <div class="column">USD Price</div>
-                                <div class="column">Quantity</div>
-                                <div class="column">Floor Diference</div>
-                                <div class="column">Expiration</div>
-                                <div class="column">Form</div>
-                            </div>
-                            <div class="table-item">
-                                <div class="column">
-                                    <h6 class="price gem"><i class="icon-gem"></i>0,0034</h6>
-                                </div>
-                                <div class="column">$6,60</div>
-                                <div class="column">3</div>
-                                <div class="column">90% below</div>
-                                <div class="column">In 26 day</div>
-                                <div class="column"><span class="tf-color">273E40</span></div>
-                            </div>
-                            <div class="table-item">
-                                <div class="column">
-                                    <h6 class="price gem"><i class="icon-gem"></i>0,0034</h6>
-                                </div>
-                                <div class="column">$6,60</div>
-                                <div class="column">3</div>
-                                <div class="column">90% below</div>
-                                <div class="column">In 26 day</div>
-                                <div class="column"><span class="tf-color">273E40</span></div>
-                            </div>
-                            <div class="table-item">
-                                <div class="column">
-                                    <h6 class="price gem"><i class="icon-gem"></i>0,0034</h6>
-                                </div>
-                                <div class="column">$6,60</div>
-                                <div class="column">3</div>
-                                <div class="column">90% below</div>
-                                <div class="column">In 26 day</div>
-                                <div class="column"><span class="tf-color">273E40</span></div>
-                            </div>
-                            <div class="table-item">
-                                <div class="column">
-                                    <h6 class="price gem"><i class="icon-gem"></i>0,0034</h6>
-                                </div>
-                                <div class="column">$6,60</div>
-                                <div class="column">3</div>
-                                <div class="column">90% below</div>
-                                <div class="column">In 26 day</div>
-                                <div class="column"><span class="tf-color">273E40</span></div>
-                            </div>
-                        </div>
+                    <div data-wow-delay="0s" class="wow fadeInRight product-item details">
+                        <div id="map" style="height: 400px;width: 100%"></div>
                     </div>
+                    <livewire:service.show-bids :service_id="$service->id">
                 </div>
 
             </div>
         </div>
     </div>
 
-    <livewire:releted-services-slider :categoryId="$service->category_id">
+    <livewire:releted-services-slider :categoryId="$service->category_id" />
+    <livewire:service.bid-popup :service="$service" />
 
 </div>
+<script>
+    var map;
+    var marker;
+    var initialCenter = {
+        lat: {{ $service->latitude }},
+        lng: {{ $service->longitude }}
+    };
+
+    function initAutocomplete() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: initialCenter,
+            zoom: 16,
+            mapTypeId: 'roadmap',
+            clickableIcons: false
+        });
+
+        var input = document.getElementById('pac-input');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
+
+
+        // Set the initial marker
+        setMarker(initialCenter);
+    }
+
+    function setMarker(location) {
+        if (marker) {
+            marker.setPosition(location);
+        } else {
+            marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                draggable: false
+            });
+        }
+    }
+
+    // function updateAddress(latLng) {
+    //     document.getElementById('latitude').value = latLng.lat();
+    //     document.getElementById('longitude').value = latLng.lng();
+    //     var geocoder = new google.maps.Geocoder();
+    //     geocoder.geocode({
+    //         'location': latLng
+    //     }, function(results, status) {
+    //         if (status === 'OK' && results[0]) {
+    //             document.getElementById('location-name').value = results[0].formatted_address;
+    //             document.getElementById('pac-input').value = results[0].formatted_address;
+    //         }
+    //     });
+    // }
+
+    // Calculate Distance
+    // function calculateDistance(lat1, lon1, lat2, lon2, elementId) {
+    //     var R = 3959; // Radius of Earth in miles
+    //     var dLat = (lat2 - lat1) * Math.PI / 180;
+    //     var dLon = (lon2 - lon1) * Math.PI / 180;
+    //     lat1 = lat1 * Math.PI / 180;
+    //     lat2 = lat2 * Math.PI / 180;
+
+    //     var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    //             Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
+    //     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    //     var distance = R * c;
+
+    //     document.getElementById(elementId).innerHTML = distance.toFixed(2) + ' miles';
+    // }
+
+
+
+    // Example usage of calculateDistance function
+    // calculateDistance(initialCenter.lat, initialCenter.lng, 40.7128, -74.0060, 'distance'); // Replace with your target coordinates
+</script>
+
+<!-- Include Google Maps API -->
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc9NIB-ScnkTvQZzrB53TfaCwo1XUegHM&libraries=places,geometry&callback=initAutocomplete"
+    async defer></script>

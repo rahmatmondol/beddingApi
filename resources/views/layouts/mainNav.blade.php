@@ -4,7 +4,7 @@
              <a href="/" wire:navigate>home</a>
          </li>
          <li class="menu-item">
-            <a href="/auth/login" wire:navigate>login</a>
+            <a href="{{ route('auth-login') }}" wire:navigate>login</a>
         </li>
      </ul>
  </nav><!-- /#main-nav -->

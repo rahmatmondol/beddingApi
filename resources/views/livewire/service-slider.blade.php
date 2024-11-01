@@ -19,7 +19,7 @@
                                 <div class="tf-card-box">
                                     <div class="card-media">
                                         <a href="/service/{{ $service->id }}">
-                                            <img src="{{ asset('user') }}/assets/images/box-item/banner-01.jpg" alt="">
+                                            <img src="{{ $service->image }}" alt="">
                                         </a>
                                         <span class="wishlist-button icon-heart"></span>
                                         <div class="featured-countdown">

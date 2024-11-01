@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\ZoneController;
 use App\Http\Controllers\Api\V1\CustomerAuthController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserServiceController;
 
 
 Route::middleware('auth')->group(function () {
@@ -129,13 +130,30 @@ route::get('/auth/singup', function () {
 
 Route::get('service/{id}', function($id){
     return view('pages.service.details', compact('id'));
-});
+})->name('service.details');
 
 // start route for frontend
-route::middleware('auth')->group(function () {
+route::middleware('auth.user')->group(function () {
+    //dashboard
     route::get('/auth/dashboard', function () {
-        return view('marketMainPage');
-    });
+        return view('dashboard');
+    })->name('auth-dashboard');
+
+    //service create
+    route::get('/auth/service/create', [UserServiceController::class, 'index'])->name('auth-service-create');
+    route::post('/auth/service/store', [UserServiceController::class, 'store'])->name('auth-service-store');
+
+    //service list
+    route::get('/auth/services', function () {
+        return view('user.service.services');
+    })->name('auth-services');
+
+    //service edit
+    route::get('/auth/service/edit/{id}', [UserServiceController::class, 'edit'])->name('auth-service-edit');
+    route::post('/auth/service/update/{id}', [UserServiceController::class, 'update'])->name('auth-service-update');
+   
+
 });
+
 
 require __DIR__ . '/auth.php';
